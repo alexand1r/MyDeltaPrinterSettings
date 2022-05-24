@@ -616,7 +616,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -976,8 +976,8 @@
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
 // variables to calculate steps
-#define XYZ_FULL_STEPS_PER_ROTATION 200
-#define XYZ_MICROSTEPS 16
+#define XYZ_FULL_STEPS_PER_ROTATION 200.0
+#define XYZ_MICROSTEPS 64
 #define XYZ_BELT_PITCH 2
 #define XYZ_PULLEY_TEETH 20
 
